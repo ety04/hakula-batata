@@ -13,10 +13,23 @@
 
 /** -------------------- IMPORTS ----------------------- */
 
+const Discord = require('discord.js')
+
 /** ---------------- GLOBAL VARIABLES ------------------ */
+
+const bot = new Discord.Client();
+
+const token = process.env.TK_HB_BOT;
 
 /** --------------- INTERNAL FUNCTIONS ----------------- */
 
 /** ----------------- DISCORD EVENTS ------------------- */
 
 console.log("------------ Bot started! -------------");
+
+bot.on('ready', () => {
+	console.log("~~~~~~~~Bot connected!~~~~~~~~");
+});
+	
+/** ----------------- CONNECTION ------------------- */
+bot.login(token);

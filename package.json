@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ety04/hakula-batata/issues"
   },
-  "homepage": "https://github.com/ety04/hakula-batata#readme"
+  "homepage": "https://github.com/ety04/hakula-batata#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
 }
