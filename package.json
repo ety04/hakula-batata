@@ -1,0 +1,21 @@
+{
+  "name": "hakula-batata",
+  "version": "1.0.0",
+  "description": "A generic bot for Discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ety04/hakula-batata.git"
+  },
+  "keywords": [],
+  "author": "Ety",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ety04/hakula-batata/issues"
+  },
+  "homepage": "https://github.com/ety04/hakula-batata#readme"
+}
