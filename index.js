@@ -72,7 +72,7 @@ bot.on('guildMemberAdd',  member => {
 		member.addRole(rentree_rl);
 });
 
-bon.on('guildMemberRemove', member => {
+bot.on('guildMemberRemove', member => {
 		console.log('Member leaving - ' + member.user.username);
 		
 		let leaveRE = createEmbedMessage(member, false);
