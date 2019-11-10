@@ -43,7 +43,7 @@ function createEmbedMessage(member, admission)
 	if(admission)
 	{
 		RE.setColor("#4ee121")
-		  .setDescription("Bienvenue à " + member + " dans **La Récréation** ! Lis le " + canal_reglement + " et assigne tes rôles dans " + canal_roles ".");
+		  .setDescription("Bienvenue à " + member + " dans **La Récréation** ! Lis le " + canal_reglement + " et assigne tes rôles dans " + canal_roles + ".");
 	}
 	else
 	{
