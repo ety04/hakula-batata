@@ -82,7 +82,7 @@ bot.on('ready', () => {
 	var emoji_patate = bot.emojis.find("name", "potato");
 	let pres_hak = "Bonjour. Mon nom est Hakula Batata. Je suis un robot. Mangez des patates, c'est bon pour la santé.";
 	canal_pres.send(pres_hak)
-		.then(message => message.react(emoji_love) message.react(emoji_patate));
+		.then(message => { message.react(emoji_love); message.react(emoji_patate); });
 
 });
 
