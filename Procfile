@@ -1,1 +1,1 @@
-worker: npm install && node index.js
+worker: npm install && node premiers_messages.js
