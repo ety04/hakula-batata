@@ -76,7 +76,7 @@ bot.on('ready', () => {
 	let mess_reg = createEmbedMessage(titre, contenu);
 	canal_reglement.send(mess_reg)
 		.then(mess => mess.react(emoji_check))
-		.catch(console.error("Failed to send/react");
+		.catch(console.error("Failed to send/react"));
 	
 	// Message de présentation
 	const emoji_love = bot.emojis.find(em => em.name === "heart_decoration");
@@ -84,7 +84,7 @@ bot.on('ready', () => {
 	let pres_hak = "Bonjour. Mon nom est Hakula Batata. Je suis un robot. Mangez des patates, c'est bon pour la santé.";
 	canal_pres.send(pres_hak)
 		.then(message => { message.react(emoji_love); message.react(emoji_patate); })
-		.catch(console.error("Failed to send/react");
+		.catch(console.error("Failed to send/react"));
 
 });
 
