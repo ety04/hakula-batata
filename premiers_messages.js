@@ -57,8 +57,8 @@ bot.on('ready', () => {
 	let role_dir = canal_reglement.guild.roles.get(dirlo_rl);
 
 	// Message pour "règlement"
-	var emoji_bell = bot.emojis.find("name", "bell");
-	var emoji_check = bot.emojis.find("name", "white_check_mark");
+	var emoji_bell = bot.emojis.find(em => em.name === "bell");
+	var emoji_check = bot.emojis.find(em => em.name === "white_check_mark");
 	var titre = emoji_bell + " Règlement intérieur " + emoji_bell;
 	var contenu =
 	"Bienvenue sur le serveur **La Récréation**.\n"
@@ -78,8 +78,8 @@ bot.on('ready', () => {
 		.then(mess => mess.react(emoji_check));
 	
 	// Message de présentation
-	var emoji_love = bot.emojis.find("name", "heart_decoration");
-	var emoji_patate = bot.emojis.find("name", "potato");
+	var emoji_love = bot.emojis.find(em => em.name === "heart_decoration");
+	var emoji_patate = bot.emojis.find(em => em.name === "potato");
 	let pres_hak = "Bonjour. Mon nom est Hakula Batata. Je suis un robot. Mangez des patates, c'est bon pour la santé.";
 	canal_pres.send(pres_hak)
 		.then(message => { message.react(emoji_love); message.react(emoji_patate); });
