@@ -74,8 +74,8 @@ bot.on('ready', () => {
 	+ "Réagissez avec " + emoji_check + " pour accepter le présent règlement!\n";
 	
 	let mess_reg = createEmbedMessage(titre, contenu);
-	mess_reg.react(emoji_check);
-	canal_reglement.send(mess_reg);
+	canal_reglement.send(mess_reg)
+		.then(mess => mess.react(emoji_check));
 	
 	// Message de présentation
 	var emoji_love = bot.emojis.find("name", "heart_decoration");
