@@ -38,7 +38,7 @@ function createEmbedMessage(titre, texte)
 {
 	let RE = new Discord.RichEmbed()
 		.setAuthor(titre)
-		.setFooter("La Direction");
+		.setFooter("La Direction")
 		.setColor("#2ddaed")
 		.setDescription(texte);
 	return RE;
