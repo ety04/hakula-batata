@@ -57,8 +57,10 @@ bot.on('ready', () => {
 	const role_dir = canal_reglement.guild.roles.get(dirlo_rl);
 
 	// Message pour "règlement"
-	const emoji_bell = bot.emojis.find(em => em.name === '🔔');	// bell
-	const emoji_check = bot.emojis.find(em => em.name === '✅');	// white_check_mark
+	//const emoji_bell = bot.emojis.find(em => em.name === '🔔');	// bell
+	//const emoji_check = bot.emojis.find(em => em.name === '✅');	// white_check_mark
+	const emoji_bell = '🔔';	// bell
+	const emoji_check = '✅';	// white_check_mark
 	var titre = emoji_bell + " Règlement intérieur " + emoji_bell;
 	var contenu =
 	"Bienvenue sur le serveur **La Récréation**.\n"
@@ -79,8 +81,10 @@ bot.on('ready', () => {
 		.catch(console.error("Failed to send/react"));
 	
 	// Message de présentation
-	const emoji_love = bot.emojis.find(em => em.name === '💟');	// heart_decoration
-	const emoji_patate = bot.emojis.find(em => em.name === '🥔');	// potato
+	//const emoji_love = bot.emojis.find(em => em.name === '💟');	// heart_decoration
+	//const emoji_patate = bot.emojis.find(em => em.name === '🥔');	// potato
+	const emoji_love = '💟';	// heart_decoration
+	const emoji_patate = '🥔';	// potato
 	let pres_hak = "Bonjour. Mon nom est Hakula Batata. Je suis un robot. Mangez des patates, c'est bon pour la santé.";
 	canal_pres.send(pres_hak)
 		.then(message => { message.react(emoji_love); message.react(emoji_patate); })
